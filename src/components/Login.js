@@ -3,6 +3,7 @@ import '../components/login.css'
 import logo from '../../src/logoML.png'
 import dial from '../../src/dial.png'
 import black from '../../src/blackbell.png'
+import {BsFillBellFill}from "react-icons/bs";
 const Login = () => {
   return (
     <>
@@ -14,7 +15,7 @@ const Login = () => {
              <div className='second-1'>
              <img src={dial} alt='dial'></img>
              <p className='text-info'>+1 999 999 999</p>
-             <img src={black} alt='bell'></img>
+             <BsFillBellFill size={20} className='mt-1 mx-2'/>
              <p className='butt-1'>Eng</p>
              </div>
          </div>
