@@ -4,9 +4,11 @@ h1{
 .cards{
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
 }
 .box-1{
+    display: flex;
+    justify-content: space-between;
     width:400px;
     height: 90px;
     background:white;
@@ -85,9 +87,8 @@ tr:last-child th:last-child td:last-child{
 .hello{
     margin-left: auto;
 }
-.bell img{
-    height: 50px;
-    padding-bottom: 10px;
+.bell{
+   margin-bottom: 10px;
 }
 .mi{
     color: #33b5e5;
@@ -175,4 +176,10 @@ tr:last-child th:last-child td:last-child{
 .wrap ul li img{
     width:25px;
     margin-right: 10px;
+}
+.icon{
+    margin: 30px;
+}
+.profile{
+    margin-top: 9px;
 }

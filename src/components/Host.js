@@ -7,7 +7,7 @@ import { MdHome } from "react-icons/md";
 import { HiUsers } from "react-icons/hi";
 import { CgProfile } from "react-icons/cg";
 import { Link } from 'react-router-dom'
-import {SiChakraui} from "react-icons/si";
+import { VscBell } from "react-icons/vsc";
 const Host = () => {
   return (
     <>
@@ -17,9 +17,9 @@ const Host = () => {
     <ul>
       <li><img src={logo} alt='logo'></img>MiloLive
         <ul>
-          <li><MdHome/><Link to='/agency'>DashBoard</Link></li>
-          <li> <HiUsers/><Link to='/host'>Host User</Link></li>
-          <li><CgProfile/><Link to='/profile'>Profile</Link></li>
+          <li><MdHome size={25}/><Link to='/agency'>DashBoard</Link></li>
+          <li> <HiUsers size={25}/><Link to='/host'>Host User</Link></li>
+          <li><CgProfile size={25}/><Link to='/profile'>My Profile</Link></li>
         </ul>
       </li>
     </ul>
@@ -29,10 +29,12 @@ const Host = () => {
     <div className='container1'>
     <div className='navbar mt-2'>
         <div className='bell'>
-        <img src={bell} alt='bell'></img>
+        <VscBell size={40}/>
         </div>
         <div className='hello'>
-        <img src={icon} alt='icon'></img>
+        <div className='profile'>
+        <CgProfile size={30}/>
+        </div>
         <p className='p-2'>Hello,Admin</p>
         </div>
     </div>
